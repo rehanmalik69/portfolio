@@ -40,19 +40,31 @@ body {
 
 /* Theme Toggle */
 .theme-toggle {
-    background: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--card-bg);
     border: none;
     cursor: pointer;
-    padding: 8px;
-    margin: 0 20px;
-    color: var(--text-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .theme-toggle i {
     font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation */
