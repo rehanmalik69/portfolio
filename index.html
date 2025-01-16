@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Rehan Malik</span></h1>
+            <p class="animate-text-delay">Full Stack Developer & Designer</p>
+            <div class="social-links hero-social">
+                <a href="https://github.com/rehanmalik69" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/rehanmalik___/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Final year university student seeking a job in data science to apply theoretical knowledge and gain practical experience.
+                    Eager to contribute to innovative projects, learn from industry experts, and develop data analysis and machine learning
+                    skills.</p>
+            </div>
+            <div class="about-cards">
+                <div class="card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Analysis</h3>
+                    <p>Expert in SQL and Power BI for comprehensive data analysis and visualization</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security</h3>
+                    <p>Proficient in security analysis using Kali Linux and various penetration testing tools</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Development</h3>
+                    <p>Full-stack development with Java and modern web technologies, plus database design expertise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            <!-- Project cards will be dynamically added via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <!-- Skill bars will be dynamically added via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/rehanmalik69" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/rehanmalik___/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Rehan Malik. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
